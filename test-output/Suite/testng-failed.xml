@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test-Runner-Chrome(failed)" parallel="tests">
+    <classes>
+      <class name="vTiger.ContactTest.CreateContactTest">
+        <methods>
+          <include name="bcConfig"/>
+          <include name="bmConfig"/>
+          <include name="bsConfig"/>
+          <include name="createContactDemotest"/>
+          <include name="CreateContactTest"/>
+          <include name="asConfig"/>
+          <include name="amConfig"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- vTiger.ContactTest.CreateContactTest -->
+    </classes>
+  </test> <!-- Test-Runner-Chrome(failed) -->
+  <test thread-count="2" name="Test-Runner-Firefox(failed)" parallel="tests">
+    <classes>
+      <class name="vTiger.ContactTest.CreateContactTest">
+        <methods>
+          <include name="bcConfig"/>
+          <include name="bmConfig"/>
+          <include name="bsConfig"/>
+          <include name="createContactDemotest"/>
+          <include name="CreateContactTest"/>
+          <include name="asConfig"/>
+          <include name="amConfig"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- vTiger.ContactTest.CreateContactTest -->
+    </classes>
+  </test> <!-- Test-Runner-Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
