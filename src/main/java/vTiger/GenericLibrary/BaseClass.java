@@ -30,6 +30,7 @@ public class BaseClass {
 	public JavaLibrary jLib = new JavaLibrary();
 	public WebDriverLibrary wLib = new WebDriverLibrary();
 	public WebDriver driver = null;
+	public static WebDriver sDriver =null;
 	
 	@BeforeSuite(groups = {"smokeSuite","regressionSuite"})
 	public void bsConfig()
@@ -61,7 +62,7 @@ public class BaseClass {
 		{
 			System.out.println("invalid browser name");
 		}
-		
+		sDriver = driver;
 		wLib.maximizeWindow(driver);
 		wLib.waitForPageLoad(driver);
 		driver.get(URL);
